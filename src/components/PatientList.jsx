@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import { hastaData } from '../helper/Data'
 
 
 const PatientList = ({ patients, setPatients, selectedDoctor }) => {

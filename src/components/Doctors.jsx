@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-const Doctors = ({selectedDoctor, setSelectedDoctor, show, setShow}) => {
+const Doctors = ({ setSelectedDoctor, setShow}) => {
   return (
     <div className="all-doctors-section">
       <div className="all-doctors-header">All Doctors</div>

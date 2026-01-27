@@ -7,7 +7,7 @@ import Doctors from '../components/Doctors'
 
 const Home = () => {
 
-  const [doctors, setDoctors] = useState(doctorData)
+  const doctors = doctorData
 
   const [patients, setPatients] = useState(() => {
     const savedPatient = localStorage.getItem("patients");
