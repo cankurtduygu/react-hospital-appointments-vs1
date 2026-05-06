@@ -1,55 +1,39 @@
-# 🏥 Redux Appointment — Hospital Appointment Management System
+# 🏥 Hospital Appointment System
 
-💻 Live Demo: https://YOUR_DEMO_LINK.netlify.app/
+💻 Live Demo:  
+https://appointment-hospital-system.netlify.app/
 
 ---
 
 ## 📖 Description
 
-Modern Life Hospital is a responsive React appointment management application.
+A responsive React application for managing hospital appointments.
 
 Users can:
 - browse doctors,
 - create appointments,
 - manage patient records,
 - mark appointments as completed,
-- and persist all data using localStorage.
-
-The application is designed with a responsive Bootstrap layout for desktop and tablet devices.
+- and store all data in localStorage.
 
 ---
 
 ## 🎦 Preview
 
-<img src="./assets/hospital-appointment-demo.gif" width="350" />
+<img src="./appointment-hospital.gif" width="350" />
 
 ---
 
 ## ✨ Features
 
-### 👨‍⚕️ Doctor Listing
-- View doctors with:
-  - name
-  - specialty
-  - profile image
-
-### 📅 Appointment Booking
-- Create appointments with:
-  - patient name
-  - appointment reason
-  - date & time
-
-### ✅ Appointment Status
-- Double-click appointment cards to toggle completed status.
-
-### 🗑 Appointment Delete
-- Remove appointments instantly.
-
-### 💾 Persistent Storage
-- Appointment data is saved in localStorage.
-
-### 📱 Responsive Design
-- Mobile/tablet friendly Bootstrap grid system.
+- Doctor listing system
+- Appointment booking
+- Appointment filtering
+- Mark as completed
+- Delete appointment
+- LocalStorage persistence
+- Form validation
+- Responsive Bootstrap layout
 
 ---
 
@@ -94,9 +78,9 @@ src/
 ## ⚙️ Installation
 
 ```bash
-git clone YOUR_REPO_LINK
+git clone https://github.com/cankurtduygu/hospital-appointment-system
 
-cd react-hospital-appointments-vs1
+cd hospital-appointment-system
 
 npm install
 
@@ -105,9 +89,11 @@ npm start
 
 ---
 
-## 🎯 Objective
+## 📱 Responsive Design
 
-Build a responsive hospital appointment management system using ReactJS.
+- Desktop support
+- Tablet support
+- Responsive Bootstrap grid system
 
 ---
 
@@ -117,11 +103,10 @@ Build a responsive hospital appointment management system using ReactJS.
 - Appointment editing
 - Authentication system
 - Backend integration
-- Database support
 
 ---
 
 ## 📁 Source Code
 
 GitHub Repository:  
-[redux-appointment](https://github.com/cankurtduygu/redux-appointment?utm_source=chatgpt.com)
+https://github.com/cankurtduygu/hospital-appointment-system
