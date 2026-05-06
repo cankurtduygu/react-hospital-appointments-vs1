@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# 🏥 Redux Appointment — Hospital Appointment Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+💻 Live Demo: https://YOUR_DEMO_LINK.netlify.app/
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📖 Description
 
-### `npm start`
+Modern Life Hospital is a responsive React appointment management application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Users can:
+- browse doctors,
+- create appointments,
+- manage patient records,
+- mark appointments as completed,
+- and persist all data using localStorage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application is designed with a responsive Bootstrap layout for desktop and tablet devices.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎦 Preview
 
-### `npm run build`
+<img src="./assets/hospital-appointment-demo.gif" width="350" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 👨‍⚕️ Doctor Listing
+- View doctors with:
+  - name
+  - specialty
+  - profile image
 
-### `npm run eject`
+### 📅 Appointment Booking
+- Create appointments with:
+  - patient name
+  - appointment reason
+  - date & time
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ✅ Appointment Status
+- Double-click appointment cards to toggle completed status.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🗑 Appointment Delete
+- Remove appointments instantly.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 💾 Persistent Storage
+- Appointment data is saved in localStorage.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📱 Responsive Design
+- Mobile/tablet friendly Bootstrap grid system.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠 Tech Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Technology | Version |
+|---|---|
+| React | 19 |
+| React Bootstrap | 2 |
+| Bootstrap | 5 |
+| React Icons | 4 |
+| react-uuid | 2 |
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧩 Project Structure
 
-### Analyzing the Bundle Size
+```bash
+src/
+├── App.js
+├── App.css
+├── index.js
+│
+├── assets/
+│   ├── doctors
+│   └── logo
+│
+├── components/
+│   ├── AddPatient.jsx
+│   ├── Doctors.jsx
+│   └── PatientList.jsx
+│
+├── helper/
+│   └── Data.jsx
+│
+└── pages/
+    └── Home.jsx
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ⚙️ Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+git clone YOUR_REPO_LINK
 
-### Advanced Configuration
+cd react-hospital-appointments-vs1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm install
 
-### Deployment
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🎯 Objective
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Build a responsive hospital appointment management system using ReactJS.
+
+---
+
+## 🚀 Future Improvements
+
+- Search functionality
+- Appointment editing
+- Authentication system
+- Backend integration
+- Database support
+
+---
+
+## 📁 Source Code
+
+GitHub Repository:  
+[redux-appointment](https://github.com/cankurtduygu/redux-appointment?utm_source=chatgpt.com)

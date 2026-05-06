@@ -3,73 +3,82 @@ import doctor2 from '../assets/doctor2.png';
 import doctor3 from '../assets/doctor3.png';
 import doctor4 from '../assets/doctor4.png';
 
-
 // Diğer doktor resimleri eklenirse buraya import edilir
 
 export const hastaData = [
   {
     id: 1,
-    patientName: "Lily Adams",
-    day: "Dec 12th at 2:30pm",
+    patientName: 'Lily Adams',
+    day: 'Dec 12th at 2:30pm',
+    reason: 'Routine Check - Regular control',
     isDone: false,
-    myDoctor: "Dr. Sophia Miller",
+    myDoctor: 'Dr. Sophia Miller',
   },
   {
     id: 2,
-    patientName: "Noah Brooks",
-    day: "Dec 13th at 1:30pm",
+    patientName: 'Noah Brooks',
+    day: 'Dec 13th at 1:30pm',
+    reason: 'First Examination - First time examination',
     isDone: true,
-    myDoctor: "Dr. Sophia Miller",
+    myDoctor: 'Dr. Sophia Miller',
   },
   {
     id: 3,
-    patientName: "Frank Reynolds",
-    day: "Dec 14th at 3:00pm",
+    patientName: 'Frank Reynolds',
+    day: 'Dec 14th at 3:00pm',
+    reason: 'Lab - Laboratory procedure',
     isDone: false,
-    myDoctor: "Dr. Sophia Miller",
+    myDoctor: 'Dr. Sophia Miller',
   },
   {
     id: 4,
-    patientName: "Elizabeth Moore",
-    day: "Dec 12th at 2:30pm",
+    patientName: 'Elizabeth Moore',
+    day: 'Dec 12th at 2:30pm',
+    reason: 'Routine Check - Regular control',
     isDone: false,
-    myDoctor: "Dr. Emily Carter",
+    myDoctor: 'Dr. Emily Carter',
   },
   {
     id: 5,
-    patientName: "Olivia Parker",
-    day: "Dec 13th at 1:30pm",
+    patientName: 'Olivia Parker',
+    day: 'Dec 13th at 1:30pm',
+    reason: 'First Examination - First time examination',
     isDone: true,
-    myDoctor: "Dr. Emily Carter",
+    myDoctor: 'Dr. Emily Carter',
   },
   {
     id: 6,
-    patientName: "Anna Williams",
-    day: "Dec 14th at 3:00pm",
+    patientName: 'Anna Williams',
+    day: 'Dec 14th at 3:00pm',
+    reason: 'Lab - Laboratory procedure',
     isDone: false,
-    myDoctor: "Dr. Michael Anderson",
+    myDoctor: 'Dr. Michael Anderson',
   },
 ];
 
 export const doctorData = [
   {
     id: 1,
-    doctorName: "Dr. Michael Anderson",
+    doctorName: 'Dr. Michael Anderson',
     doctorImg: doctor1,
+    specialty: 'Cardiology',
   },
   {
     id: 2,
-    doctorName: "Dr. Emily Carter",
+    doctorName: 'Dr. Emily Carter',
     doctorImg: doctor2,
+    specialty: 'Neurology',
   },
   {
     id: 3,
-    doctorName: "Prof. Dr. Richard Thompson",
-    doctorImg: doctor3, 
+    doctorName: 'Prof. Dr. Richard Thompson',
+    doctorImg: doctor3,
+    specialty: 'Orthopedics',
   },
   {
     id: 4,
-    doctorName: "Dr. Sophia Miller",
-    doctorImg: doctor4, 
+    doctorName: 'Dr. Sophia Miller',
+    doctorImg: doctor4,
+    specialty: 'Pediatrics',
   },
 ];

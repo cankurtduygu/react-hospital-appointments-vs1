@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-
 const PatientList = ({ patients, setPatients, selectedDoctor }) => {
-  let filteredPatient = selectedDoctor ? patients.filter((item) => item.myDoctor === selectedDoctor.doctorName) : patients;
+  let filteredPatient = selectedDoctor
+    ? patients.filter((item) => item.myDoctor === selectedDoctor.doctorName)
+    : patients;
 
   const handleDelete = (id) => {
     setPatients(patients.filter((item) => item.id !== id));
@@ -25,7 +26,28 @@ const PatientList = ({ patients, setPatients, selectedDoctor }) => {
         <span className="appointments-title">Appointments List</span>
       </div>
       <div className="appointments-divider" />
-      <div style={{ maxWidth: 700, margin: "0 auto", maxHeight: '420px', overflowY: 'auto', paddingRight: '8px' }}>
+      <div
+        style={{
+          maxWidth: 700,
+          margin: '0 auto',
+          maxHeight: '420px',
+          overflowY: 'auto',
+          paddingRight: '8px',
+        }}
+      >
+        {filteredPatient?.length === 0 && (
+          <div
+            style={{
+              textAlign: 'center',
+              padding: '2.5rem 1rem',
+              color: '#7b8ca7',
+              fontSize: '1.05rem',
+            }}
+          >
+            <div style={{ fontSize: '2.5rem', marginBottom: '0.7rem' }}>📋</div>
+            <div style={{ fontWeight: 600 }}>No appointments found.</div>
+          </div>
+        )}
         {filteredPatient?.map((item) => {
           const doneStyle = item.isDone
             ? {
@@ -58,13 +80,69 @@ const PatientList = ({ patients, setPatients, selectedDoctor }) => {
                 ...doneStyle,
               }}
               onDoubleClick={() => handleToggleDone(item.id)}
-              title="Çift tıkla: Tamamlandı / Aktif"
+              title="Double click to mark as done / active"
             >
-              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', minHeight: 70, textAlign: 'left' }}>
-                <div style={{ fontWeight: 700, fontSize: 15, color: '#22223b', marginBottom: 1, textDecoration: item.isDone ? 'line-through' : 'none', opacity: item.isDone ? 0.7 : 1 }}>{item.patientName}</div>
-                {item.reason && <div style={{ fontSize: 13, color: '#495057', marginBottom: 1, textDecoration: item.isDone ? 'line-through' : 'none', opacity: item.isDone ? 0.7 : 1 }}>{item.reason}</div>}
-                {item.day && <div style={{ fontSize: 12, color: '#7b8ca7', marginBottom: 1, textDecoration: item.isDone ? 'line-through' : 'none', opacity: item.isDone ? 0.7 : 1 }}>{item.day}</div>}
-                <div style={{ fontWeight: 600, fontSize: 14, color: '#3a86ff', marginTop: 1, textDecoration: item.isDone ? 'line-through' : 'none', opacity: item.isDone ? 0.7 : 1 }}>{item.myDoctor}</div>
+              <div
+                style={{
+                  flex: 1,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'flex-start',
+                  justifyContent: 'center',
+                  minHeight: 70,
+                  textAlign: 'left',
+                }}
+              >
+                <div
+                  style={{
+                    fontWeight: 700,
+                    fontSize: 15,
+                    color: '#22223b',
+                    marginBottom: 1,
+                    textDecoration: item.isDone ? 'line-through' : 'none',
+                    opacity: item.isDone ? 0.7 : 1,
+                  }}
+                >
+                  {item.patientName}
+                </div>
+                {item.reason && (
+                  <div
+                    style={{
+                      fontSize: 13,
+                      color: '#495057',
+                      marginBottom: 1,
+                      textDecoration: item.isDone ? 'line-through' : 'none',
+                      opacity: item.isDone ? 0.7 : 1,
+                    }}
+                  >
+                    {item.reason}
+                  </div>
+                )}
+                {item.day && (
+                  <div
+                    style={{
+                      fontSize: 12,
+                      color: '#7b8ca7',
+                      marginBottom: 1,
+                      textDecoration: item.isDone ? 'line-through' : 'none',
+                      opacity: item.isDone ? 0.7 : 1,
+                    }}
+                  >
+                    {item.day}
+                  </div>
+                )}
+                <div
+                  style={{
+                    fontWeight: 600,
+                    fontSize: 14,
+                    color: '#3a86ff',
+                    marginTop: 1,
+                    textDecoration: item.isDone ? 'line-through' : 'none',
+                    opacity: item.isDone ? 0.7 : 1,
+                  }}
+                >
+                  {item.myDoctor}
+                </div>
               </div>
               <Button
                 variant="light"
@@ -72,15 +150,36 @@ const PatientList = ({ patients, setPatients, selectedDoctor }) => {
                 className="minimal-delete-btn"
                 onClick={() => handleDelete(item.id)}
                 aria-label="Delete appointment"
-                style={{ marginLeft: 16, minWidth: 32, minHeight: 32, width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}
+                style={{
+                  marginLeft: 16,
+                  minWidth: 32,
+                  minHeight: 32,
+                  width: 32,
+                  height: 32,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: '50%',
+                }}
               >
-                <span style={{ color: '#e63946', fontSize: 22, fontWeight: 700, lineHeight: 1, display: 'block', marginTop: -2 }}>×</span>
+                <span
+                  style={{
+                    color: '#e63946',
+                    fontSize: 22,
+                    fontWeight: 700,
+                    lineHeight: 1,
+                    display: 'block',
+                    marginTop: -2,
+                  }}
+                >
+                  ×
+                </span>
               </Button>
             </Card>
           );
         })}
       </div>
     </div>
-  )
-}
-export default PatientList
+  );
+};
+export default PatientList;

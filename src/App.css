@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
 /* Appointments Divider (under Appointments List title) */
 .appointments-divider {
   height: 2.5px;
@@ -280,7 +282,6 @@
 .doctor-card .btn:hover {
   background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%) !important;
 }
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 * {
   box-sizing: border-box;
